@@ -26,23 +26,26 @@ This is a simple Node.js script that exports data from Firestore to a JSON file.
     - Click on the "Generate new private key" button at the bottom of the Firebase Admin SDK section.
     - This will download a JSON file with your service account key.
 
-3. Paste all the info of your service account key in the serviceAccountKey.json, should look like this:
+3. Paste all the info of your service account key in the `serviceAccountKey.json`. It should look like this:
 
-    ``` service account key
-{
-    "type": "service_account",
-    "project_id": "dummy-project",
-    "private_key_id": "dummy-private-key-id",
-    "private_key": "dummy-private-key",
-    "client_email": "dummy-client-email",
-    "client_id": "dummy-client-id",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dummy-client-email",
-    "universe_domain": "dummy-domain"
-  }
-      ```
+    ```json
+    {
+        "type": "service_account",
+        "project_id": "dummy-project",
+        "private_key_id": "dummy-private-key-id",
+        "private_key": "dummy-private-key",
+        "client_email": "dummy-client-email",
+        "client_id": "dummy-client-id",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dummy-client-email",
+        "universe_domain": "dummy-domain"
+    }
+    ```
+
+Replace the dummy values with your actual service account key values.
+
 
 4. Run the `export.js` script:
 
